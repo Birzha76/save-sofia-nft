@@ -6,7 +6,7 @@ from typing import Union
 from config import OMNISEA_DROPS_MANAGER_CONTRACT, OMNISEA_DROPS_MANAGER_ABI, SAVE_SOFIA_CONTRACT
 from settings import NFT_PRICE
 from utils.gas_checker import check_gas
-from utils.helpers import retry
+from utils.helpers import retry, check_mint_date
 from .account import Account
 
 

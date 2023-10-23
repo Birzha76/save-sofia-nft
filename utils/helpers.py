@@ -48,14 +48,3 @@ def get_wallets():
     if RANDOM_WALLET: random.shuffle(wallets)
 
     return wallets
-
-
-def check_mint_date(func):
-    def wrapper(*args, **kwargs):
-        MINT_END_DATE = datetime(2023, 10, 24, 12, 00, 00)
-        if datetime.now() > MINT_END_DATE:
-            logger.info("The NFT mint is complete, funds raised will be going to Sophia soon")
-        else:
-            return func(*args, **kwargs)
-
-    return wrapper

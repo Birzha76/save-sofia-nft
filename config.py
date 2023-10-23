@@ -14,6 +14,6 @@ with open(config_dir / "data/abi/omnisea/abi.json", "r") as file:
     OMNISEA_DROPS_MANAGER_ABI = json.load(file)
 
 
-SAVE_SOFIA_CONTRACT = "0xB28116733c37E100d3ced78C3e6D195F90759Af9"
+SAVE_SOFIA_CONTRACT = ""  # Перед запуском скрипта здесь устанавливаем адрес любой NFT-коллекции на Omnisea zkSync для минта
 
 OMNISEA_DROPS_MANAGER_CONTRACT = "0x17a2d7a4F44d049d3659078D0f71F811053CF9DD"
